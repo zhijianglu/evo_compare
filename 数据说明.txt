@@ -1,0 +1,5 @@
+这个文件夹保存着vins-fusion vins-mono basalt三个系统位姿估计的结果与真值的评估(将vins-fusion的结果修改成了DM_SVI_slam的结果,vins-mono的数据改成了vins-fusion的数据)
+
+每个文件夹包含着一个数据在三个系统下的误差信息，对比的结果放在results文件夹中，包含相对位姿误差（rpe测试对比效果不太理想）和绝对轨迹误差（ape）
+
+使用evo_绘图命令.txt中的命令可以实现

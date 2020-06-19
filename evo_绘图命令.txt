@@ -1,0 +1,23 @@
+
+在euroc_MH01文件夹或者euroc_MH05文件夹下依次运行以下命令即可绘图
+----------------------------rpe
+
+evo_rpe tum gt.txt vins_fusion_traj.txt -a -va --plot --plot_mode xyz --save_results ./results/rpe/vins_fusion.zip
+
+evo_rpe tum gt.txt basalt_traj.txt -a -va --plot --plot_mode xyz --save_results ./results/rpe/basalt.zip
+
+evo_rpe tum gt.txt DM_SVI_slam_traj.txt -a -va --plot --plot_mode xyz --save_results ./results/rpe/DM_SVI_slam_traj.zip
+
+evo_res results/rpe/*.zip -p --save_table results/rpe/table.csv
+
+----------------------------ape
+
+evo_ape tum gt.txt vins_fusion_traj.txt -a -va --plot --plot_mode xyz --save_results ./results/ape/vins_fusion.zip
+
+evo_ape tum gt.txt basalt_traj.txt -a -va --plot --plot_mode xyz --save_results ./results/ape/basalt.zip
+
+evo_ape tum gt.txt DM_SVI_slam_traj.txt -a -va --plot --plot_mode xyz --save_results ./results/ape/DM_SVI_slam_traj.zip
+
+evo_res results/ape/*.zip -p --save_table results/ape/table.csv
+
+
